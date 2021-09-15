@@ -72,7 +72,7 @@ function draw() {
 
 //Write keyPressed function and apply force on pressing up_arrow key on the first bob.
 function force() {
-	if (keyCode == UP_ARROW){
+	if (keyIsDown(UP_ARROW)){
 		Matter.Body.applyForce(bob3,bob3.position,{x:-0.01,y:-0.01});
 	}
 }
